@@ -45,17 +45,9 @@ class App extends Component {
   }
 
   render () {
-    const style = {
-      backgroundColor: 'green',
-      color: 'white',
-      font: 'inherit',
-      border: '1px solid blue',
-      padding: '8px',
-      cursor: 'pointer'
-    };
-
+    
     let persons = null;
-    let classArr = [classes.App];
+    let btnArr = [classes.btn];
 
     if ( this.state.showPersons ) {
       persons = (
@@ -71,15 +63,15 @@ class App extends Component {
         </div>
       );
 
-      classArr.push(classes.blueFont);
+      btnArr.push(classes.red);
     }
 
     return (
-      <div className={classArr.join(' ')}>
+      <div className={classes.App}>
         <h1>Hi, I'm a React App</h1>
         <p>This is really working!</p>
         <button
-          style={style}
+          className={btnArr.join(' ')}
           onClick={this.togglePersonsHandler}>Toggle Persons</button>
         {persons}
       </div>

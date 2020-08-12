@@ -5,3 +5,24 @@
 .blueFont{
   color: blue;
 }
+
+.btn{
+    background-color: green;
+    color: white;
+    font: inherit;
+    border: 1px solid blue;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.btn:hover{
+  background-color: lightgreen;
+}
+
+.red{
+  background-color: red;
+}
+
+.red:hover{
+  background-color: salmon;
+}
