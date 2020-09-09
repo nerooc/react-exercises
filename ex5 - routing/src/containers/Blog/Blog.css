@@ -16,8 +16,8 @@
     text-decoration: none;
     color: black;
 }
-
-.Blog a:hover,
-.Blog a:active {
+.Blog a.my-active,
+.Blog a:active,
+.Blog a:hover {
     color: white;
 }
